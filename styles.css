@@ -26,6 +26,7 @@ body {
   font-size: 36px;
   line-height: 48px;
   letter-spacing: -0.045em;
+  margin-right: 20px;
 }
 
 .site__identity__title {
@@ -36,4 +37,32 @@ body {
 .site__identity__description {
   font-weight: 400;
   max-width: 439px;
+}
+
+@media screen and (max-width: 1240px) {
+  .header__site__branding {
+    padding: 110px 100px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .header__site__branding {
+    padding: 50px 50px;
+  }
+}
+
+@media screen and (max-width: 675px) {
+  .header__site__branding {
+    padding: 50px 50px;
+    flex-direction: column;
+    justify-content: initial;
+  }
+
+  .site__name {
+    margin-right: 0;
+  }
+
+  .site__identity {
+    margin-top: 38px;
+  }
 }
