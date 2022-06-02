@@ -62,10 +62,6 @@ main {
   margin-top: 100px;
 }
 
-.team__member__card--center {
-  /* margin-top: 100px; */
-}
-
 .team__member__card__img__container {
   display: flex;
 }
@@ -156,7 +152,7 @@ main {
 
 @media screen and (max-width: 571px) {
   .header__site__branding {
-    padding: 30px 12px;
+    padding: 30px 12px 50px;
   }
 
   main {
