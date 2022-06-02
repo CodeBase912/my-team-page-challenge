@@ -52,7 +52,7 @@ main {
   padding: 0 240px;
 }
 
-.team__members__row {
+.team__members {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
   gap: 66px;
@@ -93,7 +93,7 @@ main {
     padding: 0 100px;
   }
 
-  .team__members__row {
+  .team__members {
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   }
 }
@@ -132,7 +132,7 @@ main {
     margin-top: 38px;
   }
 
-  .team__members__row {
+  .team__members {
     gap: 30px;
   }
 
@@ -159,7 +159,7 @@ main {
     padding: 0 12px;
   }
 
-  .team__members__row {
+  .team__members {
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 5px;
   }
