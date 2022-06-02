@@ -53,12 +53,17 @@ main {
 }
 
 .team__members__row {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 66px;
+}
+
+.team__member__card:nth-child(3n - 1) {
+  margin-top: 100px;
 }
 
 .team__member__card--center {
-  margin-top: 100px;
+  /* margin-top: 100px; */
 }
 
 .team__member__card__img__container {
@@ -66,8 +71,8 @@ main {
 }
 
 .team__member__card__img {
-  width: 238px;
-  height: 341px;
+  width: calc(100% - 27px);
+  object-fit: contain;
   padding-right: 10px;
   padding-bottom: 15px;
 }
@@ -83,21 +88,42 @@ main {
 
 /* Responsive */
 
-@media screen and (max-width: 1240px) {
+@media screen and (max-width: 1245px) {
   .header__site__branding {
     padding: 110px 100px;
+  }
+
+  main {
+    padding: 0 100px;
+  }
+
+  .team__members__row {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   }
 }
 
 @media screen and (max-width: 1000px) {
   .header__site__branding {
-    padding: 50px 50px;
+    padding: 70px 50px;
+  }
+
+  main {
+    padding: 0 50px;
+  }
+}
+
+@media screen and (max-width: 865px) {
+  .team__member__card:nth-child(3n - 1) {
+    margin-top: 0px;
+  }
+  .team__member__card:nth-child(2n) {
+    margin-top: 100px;
   }
 }
 
 @media screen and (max-width: 675px) {
   .header__site__branding {
-    padding: 50px 50px;
+    padding: 70px 50px;
     flex-direction: column;
     justify-content: initial;
   }
@@ -108,5 +134,46 @@ main {
 
   .site__identity {
     margin-top: 38px;
+  }
+
+  .team__members__row {
+    gap: 30px;
+  }
+
+  .team__member__card__img {
+    padding-right: 6px;
+    padding-bottom: 10px;
+  }
+
+  .team__member__positon {
+    line-height: 13px;
+  }
+
+  .team__member__name {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 571px) {
+  .header__site__branding {
+    padding: 30px 12px;
+  }
+
+  main {
+    padding: 0 12px;
+  }
+
+  .team__members__row {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 5px;
+  }
+}
+
+@media screen and (max-width: 369px) {
+  .team__member__card:nth-child(2n) {
+    margin-top: 0px;
+  }
+  .team__member__card:not(:first-child) {
+    margin-top: 20px;
   }
 }
