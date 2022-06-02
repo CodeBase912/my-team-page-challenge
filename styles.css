@@ -48,6 +48,19 @@ body {
   max-width: 439px;
 }
 
+main {
+  padding: 0 240px;
+}
+
+.team__members__row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.team__member__card--center {
+  margin-top: 100px;
+}
+
 .team__member__card__img__container {
   display: flex;
 }
