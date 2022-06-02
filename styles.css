@@ -3,9 +3,18 @@
   box-sizing: border-box;
 }
 
+:root {
+  --font-1: "Poppins", sans-serif;
+  --font-2: "PT Serif", serif;
+
+  --clr-black: #000;
+}
+
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: var(--font-1);
+  color: var(--clr-black);
   font-size: 18px;
+  font-weight: 400;
   line-height: 27px;
 }
 
@@ -21,7 +30,7 @@ body {
 }
 
 .site__name {
-  font-family: "PT Serif", sans-serif;
+  font-family: var(--font-2);
   font-weight: 700;
   font-size: 36px;
   line-height: 48px;
@@ -38,6 +47,28 @@ body {
   font-weight: 400;
   max-width: 439px;
 }
+
+.team__member__img__container {
+  display: flex;
+}
+
+.team__member__card__img {
+  width: 238px;
+  height: 341px;
+  padding-right: 10px;
+  padding-bottom: 15px;
+}
+
+.team__member__positon {
+  writing-mode: vertical-rl;
+  font-size: 12px;
+}
+
+.team__member__name {
+  font-weight: 600;
+}
+
+/* Responsive */
 
 @media screen and (max-width: 1240px) {
   .header__site__branding {
