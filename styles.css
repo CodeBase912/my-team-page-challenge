@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.container {
+  max-width: 1440px;
+  margin: auto;
+}
+
+.header__site__branding {
+  padding: 110px 240px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.site__name {
+  font-family: "PT Serif", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: -0.045em;
+}
+
+.site__identity__title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.site__identity__description {
+  font-weight: 400;
+  max-width: 439px;
+}
