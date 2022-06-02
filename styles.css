@@ -82,6 +82,16 @@ main {
   font-weight: 600;
 }
 
+footer {
+  font-family: "Montserrat", "sans-serif";
+  text-align: center;
+  padding: 24px 0;
+}
+
+footer .footer__content__link {
+  color: var(--clr-black);
+}
+
 /* Responsive */
 
 @media screen and (max-width: 1245px) {
